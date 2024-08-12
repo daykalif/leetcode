@@ -1,3 +1,5 @@
+package p52判断是否为质数;
+
 import java.util.Scanner;
 
 public class LoopTest3 {

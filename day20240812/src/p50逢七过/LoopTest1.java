@@ -1,3 +1,5 @@
+package p50逢七过;
+
 public class LoopTest1 {
     public static void main(String[] args) {
         /*朋友聚会的时候可能会玩一个游戏：逢7过

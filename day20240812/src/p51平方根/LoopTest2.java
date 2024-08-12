@@ -1,3 +1,5 @@
+package p51平方根;
+
 import java.util.Scanner;
 
 public class LoopTest2 {

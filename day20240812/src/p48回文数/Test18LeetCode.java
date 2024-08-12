@@ -1,3 +1,5 @@
+package p48回文数;
+
 public class Test18LeetCode {
     public static void main(String[] args) {
         /*需求：给你一个整数 x 。

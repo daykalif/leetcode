@@ -1,3 +1,5 @@
+package p49计算商和余数;
+
 public class Test19LeetCode {
     public static void main(String[] args) {
         /*需求：给定两个整数，被除数和除数（都是正数，且不超过int的范围） 。
