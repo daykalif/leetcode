@@ -1,4 +1,4 @@
-package Test1;
+package p108罗马数字的两种写法;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
  *         罗马数字里面是没有0的
  *         如果键盘录入的数字包含0，可以变成""(长度为0的字符串)
  */
-public class Case1 {
+public class Case2 {
 	public static void main(String[] args) {
 		//	1.键盘录入一个字符串
 		//	书写Scanner的代码
@@ -39,8 +39,7 @@ public class Case1 {
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < str.length(); i++) {
 			char c = str.charAt(i);
-			int number = c - 48; // 数字字符串转为数字
-			String s = changeLuoMa(number);
+			String s = changeLuoMa(c);
 			sb.append(s);
 		}
 		System.out.println(sb);
@@ -64,9 +63,21 @@ public class Case1 {
 		return true;
 	}
 
-	public static String changeLuoMa(int number) {
-		// 定义一个数组，让索引跟罗马数字产生一个对应关系
-		String[] arr = {"", "Ⅰ", "Ⅱ", "Ⅲ", "Ⅳ", "Ⅴ", "Ⅵ", "Ⅶ", "Ⅷ", "Ⅸ"};
-		return arr[number];
+	//利用switch进行匹配
+	public static String changeLuoMa(char number) {
+		String str = switch (number) {
+			case '0' -> "";
+			case '1' -> "Ⅰ";
+			case '2' -> "Ⅱ";
+			case '3' -> "Ⅲ";
+			case '4' -> "Ⅳ";
+			case '5' -> "Ⅴ";
+			case '6' -> "Ⅵ";
+			case '7' -> "Ⅶ";
+			case '8' -> "Ⅷ";
+			case '9' -> "Ⅸ";
+			default -> str = "";
+		};
+		return str;
 	}
 }
